@@ -10,11 +10,12 @@ Original file is located at
 
 ### Import and configure modules
 """
-
+from PIL import Image
 import math
 import streamlit as st
-import os
 import tensorflow as tf
+import os
+
 # Load compressed models from tensorflow_hub
 os.environ['TFHUB_MODEL_LOAD_FORMAT'] = 'COMPRESSED'
 
