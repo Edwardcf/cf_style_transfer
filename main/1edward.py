@@ -39,6 +39,16 @@ content_path= '/content/sample_data/download (2).png'
 Define a function to load an image and limit its maximum dimension to 512 pixels.
 """
 
+st.title("Neural Style Transfer for Wedding Photo")
+st.write("TRY WITH PC(RECOMMENDED) - IF FACING PROBLEM ON OTHER DEVICES.")
+st.write("Create your own wedding photo style by just uploading your images!")
+st.write("")
+st.write("")
+st.write("Processing will be slow because free host doesn't provide GPU support so it will be running on CPU so have some patience!")
+' ### PLEASE TAKE A LOOK TO BELOW EXAMPLE IMAGES. ### '
+st.write("")
+st.write("")
+
 def load_img(path_to_img):
   max_dim = 512
   img = tf.io.read_file(path_to_img)
